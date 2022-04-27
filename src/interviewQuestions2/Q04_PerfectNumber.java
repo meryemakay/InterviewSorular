@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Q04_PerfectNumber {
     /* Perfect Number (Mukemmel sayi)
-      Kullanici tarafindan bir sayiya kadar olan sayilarin,
+      Kullanici tarafindan alınan bir sayiya kadar olan sayilarin,
       mukemmel olup olmadigini bulan method yaziniz.
       Mukemmel sayi : bir sayinin kendisi haric bolenlerinin toplami,
       kendisine esitse o sayi mukemmeldir. (1+2+3 = 6 = 6 (Mukemmel))
@@ -16,7 +16,7 @@ public class Q04_PerfectNumber {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("bir sayi giriniz :");
-        int sayi = scan.nextInt();
+       int sayi = scan.nextInt();
 
         mukemmelSayi(sayi);
         System.out.println("******************");
@@ -44,7 +44,7 @@ public class Q04_PerfectNumber {
 
     //soru 2 icin
     private static void girilenSayiyaKadarOlanMukemmel(int girilensayi) {
-        Scanner scan = new Scanner(System.in);
+       Scanner scan = new Scanner(System.in);
         System.out.print("bir sayi giriniz :");
         girilensayi = scan.nextInt();
         int toplam = 0;

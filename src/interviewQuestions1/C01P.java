@@ -1,22 +1,30 @@
 package interviewQuestions1;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class C01P {
-    /*
-  Kullanicidan bir String aliniz.
-  String'de var olan her character'in sayisini ekrana yazdiriniz.
-  Ornek: alacan ==> a = 3, l = 1, c = 1, n = 1
-         abaa   ==> a=3  b=1
- */
+    static Scanner scan = new Scanner(System.in);
+
     public static void main(String[] args) {
 
-        Scanner scan = new Scanner(System.in);
-        System.out.print("bır strıng gırınız :");
-        String str = scan.nextLine();
+        System.out.print("bir sayi giriniz :");
+        int girilensayi = scan.nextInt();
+        int toplam = 0;
+        for (int i = 1; i < girilensayi; i++) { //girilen sayiya kadar olan sayilara bakar
+            for (int j = 1; j < i; j++) { //burada bolenler kontrol ediliyor
 
+                if (i % j == 0) {  //sayinin herhangi bir boleni varsa(j-> bolen)
+
+                    toplam = toplam + j; //bolenleri toplama ekliyor
+                }
+
+            }
+            if (toplam == i) {
+
+                System.out.println(i + " mukemmel sayidir");
+            }
+            toplam = 0;
 
         }
     }
-
+}
