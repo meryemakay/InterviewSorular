@@ -1,5 +1,7 @@
 package interviewQuestions8;
 
+import java.util.ArrayList;
+
 public class Q07_ConvertingCollectionsTask {
 
     // create an array of random numbers of size 10
@@ -9,4 +11,11 @@ public class Q07_ConvertingCollectionsTask {
     // 10 boyutunda rasgele sayılardan oluşan bir array oluştur
     // bu arrayi bir listeye dönüştür
     // listeyi sete çevir
+    public static void main(String[] args) {
+
+
+
+
+
+    }
 }
