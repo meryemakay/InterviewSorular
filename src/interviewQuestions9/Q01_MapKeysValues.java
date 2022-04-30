@@ -10,7 +10,8 @@ public class Q01_MapKeysValues {
     //5 tane ulke nufusunu yazdırıyoruz. (values())
     //nüfusların toplamını yazdırın.
     //kaç tane 50 milyondan fazla nüfuslu ülke var?
-    // ulke ve nufus  lari hem map gibi..hem de ayri ayri yazdirma ?
+    // ulke ve nufus sıralama
+    // lari hem map hem de ayri ayri yazdirma ?
 
     public static void main(String[] args) {
         HashMap<String,Integer> ulke = new HashMap<>();
@@ -46,17 +47,19 @@ public class Q01_MapKeysValues {
         }
         System.out.println("nufus toplami : " + nufus);
 
+        System.out.println("50 mılyndn az ulke sayııs :" + (ulke.size()-sayac));
+
         for (Map.Entry<String, Integer>siralama:ulke.entrySet()) { // entrySet = key + value
             System.out.println(siralama);
         }
 
-        for (String ulkeSirasi:ulke.keySet() //sadece key
+        for (String ulkeSirasi:ulke.keySet() //sadece key (ulkeler)
              ) {
             System.out.println(ulkeSirasi);
         }
 
 
-        for (Integer nufusSirasi:ulke.values() //nufuslari
+        for (Integer nufusSirasi:ulke.values() // sadece value (nufuslari)
         ) {
             System.out.println(nufusSirasi);
         }

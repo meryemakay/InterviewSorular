@@ -40,6 +40,9 @@ public class Q07_StoreMap {
 
         System.out.println("gormek istediginiz kisinin kimlik numarasini giriniz : ");
         System.out.println(kisiListesi.get(scan.nextInt()));
+
+
+
     }
 
 }

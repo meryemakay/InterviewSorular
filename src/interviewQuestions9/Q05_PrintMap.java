@@ -17,5 +17,9 @@ public class Q05_PrintMap {
         map.put(6, "Alti");
         System.out.println("map = " + map);
         //map = {1=Bir, 2=Iki, 3=Uc, 4=Dort, 5=Bes, 6=Alti}
+
+        System.out.println(map.entrySet());
+
+
     }
 }
