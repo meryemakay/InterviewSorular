@@ -44,6 +44,9 @@ public class Q08_ReadFileTxt {
             }
         }
 
+
+        
+
         System.out.println(wordCounter);
 
         //{Java=4, codes=1, study=1, learn=2, is=2, type=1, easy=2, money=1, earn=1, well=1, Learn=1, to=1, To=1, if=1, you=1}

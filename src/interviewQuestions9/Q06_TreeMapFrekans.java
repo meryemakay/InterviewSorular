@@ -19,6 +19,8 @@ public class Q06_TreeMapFrekans {
         Map<String, Integer> map = frekans2(cumle); //2.yol array sinifindan faydalanarak
         System.out.println("map = " + map);
 
+
+
     }
 
     private static Map<String, Integer> frekans2(String cumle) {
